@@ -22,9 +22,11 @@ const Home: React.FC = () => {
   });
 
   // 若重新整理可重新獲取最新資料
-  window.onload = () => {
-    navigate("/load");
-  };
+  if (localStorage.getItem("user")) {
+    window.onload = () => {
+      navigate("/load");
+    };
+  }
 
   const settingHandler = () => {
     navigate("/setting");
