@@ -1,6 +1,6 @@
 import axios from "axios";
 // const API_URL = "http://127.0.0.1:8080/api/shop/";
-const API_URL = "https://sideprojectreserveweb.onrender.com/api/shop/";
+const API_URL = "https://sideprojectreverseweb.onrender.com/api/shop/";
 
 export interface ShopType {
   shopName: string;
