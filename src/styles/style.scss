@@ -1,0 +1,537 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Lusitana&family=Noto+Sans+TC&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+  scroll-behavior: smooth;
+  transition: 0.3s ease-in-out;
+  font-family: "Baloo 2", sans-serif;
+  user-select: none;
+  letter-spacing: 0.2rem;
+}
+
+*button {
+  cursor: pointer;
+  user-select: none;
+}
+
+#Home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .card {
+    width: 35rem;
+    height: 30rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 7px 10px 5px rgb(230, 225, 225);
+    .hello {
+      font-size: 2rem;
+    }
+    .login {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      label {
+        font-size: 1.3rem;
+      }
+      input {
+        padding: 0.3rem;
+        margin-bottom: 1rem;
+      }
+    }
+    .message {
+      width: 100%;
+      background-color: rgb(245, 108, 108);
+      color: white;
+      text-align: center;
+      padding: 0.2rem 0rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    .login-button {
+      font-size: 1.1rem;
+      font-weight: bolder;
+      padding: 0.5rem 3rem;
+      border-radius: 20px;
+      border: 0px;
+      background-color: rgb(249, 155, 181);
+      color: white;
+    }
+    .register {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 1.2rem;
+      p {
+        margin-right: 1rem;
+      }
+      button {
+        font-size: 1.2rem;
+        background-color: white;
+        border: 0px;
+        border-bottom: 1px solid rgb(255, 109, 150);
+      }
+    }
+  }
+  .footer {
+    position: absolute;
+    bottom: 10px;
+  }
+}
+
+#Register {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .card {
+    width: 35rem;
+    height: 35rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 7px 10px 5px rgb(230, 225, 225);
+    .hello {
+      font-size: 2rem;
+    }
+    .data {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      label {
+        font-size: 1.3rem;
+      }
+      input {
+        padding: 0.3rem;
+        margin-bottom: 1rem;
+      }
+    }
+    .message {
+      width: 100%;
+      background-color: rgb(245, 108, 108);
+      color: white;
+      text-align: center;
+      padding: 0.2rem 0rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+    .register {
+      font-size: 1.1rem;
+      font-weight: bolder;
+      padding: 0.5rem 3rem;
+      border-radius: 20px;
+      border: 0px;
+      background-color: rgb(249, 155, 181);
+      color: white;
+    }
+    .login {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 1.2rem;
+      p {
+        margin-right: 1rem;
+      }
+      button {
+        font-size: 1.2rem;
+        background-color: white;
+        border: 0px;
+        border-bottom: 1px solid rgb(255, 109, 150);
+      }
+    }
+  }
+  .footer {
+    position: absolute;
+    bottom: 10px;
+  }
+}
+
+#ShopPage {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  .card {
+    width: 38rem;
+    height: 30rem;
+    margin-top: 4rem;
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 7px 10px 5px rgb(230, 225, 225);
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.5rem;
+      letter-spacing: 0.3rem;
+    }
+    .shopdata-p {
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+    }
+    .button {
+      margin-top: 1rem;
+      button {
+        font-size: 1.1rem;
+        font-weight: bolder;
+        padding: 0.5rem 2rem;
+        margin: 0rem 1rem;
+        border-radius: 20px;
+        border: 0px;
+        background-color: rgb(249, 155, 181);
+        color: white;
+      }
+    }
+  }
+  .reverse-title {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 3rem 0 2rem 0;
+  }
+  .reverse-div {
+    width: 60rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 7px 10px 5px rgb(230, 225, 225);
+    margin-bottom: 5rem;
+    .reverse-card {
+      width: 90%;
+      height: auto;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      .display {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        background-color: rgba(218, 66, 188, 0.719);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 30px;
+        transition: all 2s ease-in-out;
+        cursor: pointer;
+        .arow {
+          position: absolute;
+          right: 3%;
+          font-size: 1.5rem;
+          font-weight: bolder;
+        }
+        .display-p {
+          margin: 0 2rem;
+          p {
+            font-size: 1.5rem;
+            font-weight: bolder;
+            letter-spacing: 0.2rem;
+          }
+        }
+      }
+      .visible {
+        width: 100%;
+        .other {
+          .other-p {
+            display: flex;
+            font-size: 1.3rem;
+            p {
+              margin: 0 1rem;
+            }
+          }
+        }
+      }
+      .hiden {
+        display: none;
+      }
+    }
+  }
+  .footer {
+    position: absolute;
+    bottom: 10px;
+  }
+}
+
+#Setting {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .card {
+    width: 35rem;
+    height: 40rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 7px 10px 5px rgb(230, 225, 225);
+    .hello {
+      font-size: 2rem;
+      margin-bottom: -1rem;
+      margin-bottom: 1rem;
+    }
+    .data {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      label {
+        font-size: 1.3rem;
+      }
+      input {
+        padding: 0.3rem;
+        margin-bottom: 1rem;
+        letter-spacing: 0.1rem;
+      }
+    }
+    .message {
+      width: 100%;
+      background-color: rgb(245, 108, 108);
+      color: white;
+      text-align: center;
+      padding: 0.2rem 0rem;
+      border-radius: 10px;
+      margin: 1rem 0rem;
+    }
+    .button {
+      font-size: 1.1rem;
+      font-weight: bolder;
+      padding: 0.5rem 3rem;
+      border-radius: 20px;
+      border: 0px;
+      p {
+        margin-right: 1rem;
+      }
+      button {
+        margin: 0 1rem;
+        font-size: 1.1rem;
+        font-weight: bolder;
+        padding: 0.5rem 4rem;
+        border-radius: 20px;
+        border: 0px;
+        background-color: rgb(249, 155, 181);
+        color: white;
+      }
+      .back {
+        padding: 0.5rem 2rem;
+      }
+    }
+  }
+  .footer {
+    position: absolute;
+    bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #ShopPage {
+    .reverse-div {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #Home {
+    .card {
+      width: 70%;
+      .hello {
+        text-align: center;
+      }
+    }
+  }
+  #Register {
+    .card {
+      width: 70%;
+      .hello {
+        text-align: center;
+      }
+    }
+  }
+  #ShopPage {
+    .card {
+      width: 80%;
+      height: 30rem;
+      h1 {
+        font-size: 2rem;
+      }
+      .shopdata-p {
+        width: 17rem;
+      }
+      .button {
+        display: flex;
+        flex-direction: column;
+        button {
+          margin: 0.5rem 0rem;
+        }
+      }
+    }
+    .reverse-div {
+      .reverse-card {
+        margin-top: 0rem;
+        .display {
+          flex-direction: column;
+          .display-p {
+            p {
+              font-size: 1.25rem;
+            }
+          }
+        }
+        .visible {
+          width: 100%;
+          .other {
+            .other-p {
+              font-size: 1rem;
+              p {
+                margin: 0rem 0rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #Setting {
+    .card {
+      width: 70%;
+      height: 45rem;
+      .hello {
+        font-size: 2rem;
+        margin-bottom: 0rem;
+      }
+      .data {
+        width: 100%;
+      }
+      .message {
+        margin-top: 1rem;
+      }
+      .button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .setting {
+          width: 12rem;
+        }
+        .back {
+          width: 80%;
+        }
+        button {
+          margin: 0.5rem 0rem;
+          padding: 0.5rem 2.9rem;
+        }
+        .back {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  *input {
+    letter-spacing: 0.1rem;
+  }
+  #Home {
+    .card {
+      .hello {
+        font-size: 1rem;
+      }
+      .login {
+        width: 100%;
+        label {
+          font-size: 1rem;
+        }
+      }
+      .login-button {
+        font-size: 1rem;
+      }
+    }
+  }
+  #Register {
+    .card {
+      .hello {
+        font-size: 1rem;
+      }
+      .data {
+        width: 100%;
+        label {
+          font-size: 1rem;
+        }
+      }
+      .register {
+        font-size: 1rem;
+      }
+      .login {
+        font-size: 1rem;
+      }
+    }
+  }
+  #ShopPage {
+    .card {
+      height: 25rem;
+      .shopdata-p {
+        width: 90%;
+      }
+      p {
+        letter-spacing: 0.1rem;
+        font-size: 1.1rem;
+      }
+    }
+    .reverse-title {
+      font-size: 1.3rem;
+    }
+    .reverse-div {
+      .reverse-card {
+        margin-top: 1rem;
+        padding: 0.3rem;
+        .display {
+          .display-p {
+            p {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  #Setting {
+    .card {
+      width: 85%;
+      .hello {
+        margin-bottom: 1rem;
+      }
+      .data {
+        label {
+          font-size: 1rem;
+        }
+      }
+      .message {
+        margin-top: 0rem;
+      }
+    }
+  }
+}
