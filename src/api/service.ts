@@ -13,7 +13,7 @@ export interface ShopType {
 // 提供所有後端api的服務
 class ShopService {
   getReserved() {
-    return axios.get("https://sideprojectreverseweb.onrender.com/api/");
+    return axios.get("https://sideprojectreverseweb.onrender.com/api/after");
   }
 
   getShopData() {
