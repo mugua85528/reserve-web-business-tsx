@@ -1,16 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Lusitana&family=Noto+Sans+TC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-weight: normal;
-  scroll-behavior: smooth;
-  transition: 0.3s ease-in-out;
-  font-family: "Baloo 2", sans-serif;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  letter-spacing: 0.2rem;
+  font-family: "Noto Sans TC", sans-serif;
+  text-decoration: none;
 }
 
 * button {
@@ -20,482 +15,99 @@
           user-select: none;
 }
 
-#Home {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#Home .card {
-  width: 35rem;
-  height: 30rem;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  box-shadow: 0px 7px 10px 5px rgb(230, 225, 225);
-}
-#Home .card .hello {
-  font-size: 2rem;
-}
-#Home .card .login {
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-}
-#Home .card .login label {
-  font-size: 1.3rem;
-}
-#Home .card .login input {
-  padding: 0.3rem;
-  margin-bottom: 1rem;
-}
-#Home .card .message {
-  width: 100%;
-  background-color: rgb(245, 108, 108);
-  color: white;
-  text-align: center;
-  padding: 0.2rem 0rem;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-}
-#Home .card .login-button {
-  font-size: 1.1rem;
-  font-weight: bolder;
-  padding: 0.5rem 3rem;
-  border-radius: 20px;
-  border: 0px;
-  background-color: rgb(249, 155, 181);
-  color: white;
-}
-#Home .card .register {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-size: 1.2rem;
-}
-#Home .card .register p {
-  margin-right: 1rem;
-}
-#Home .card .register button {
-  font-size: 1.2rem;
-  background-color: white;
-  border: 0px;
-  border-bottom: 1px solid rgb(255, 109, 150);
-}
-#Home .footer {
-  position: absolute;
-  bottom: 10px;
-}
-
-#Register {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#Register .card {
-  width: 35rem;
-  height: 35rem;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  box-shadow: 0px 7px 10px 5px rgb(230, 225, 225);
-}
-#Register .card .hello {
-  font-size: 2rem;
-}
-#Register .card .data {
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-}
-#Register .card .data label {
-  font-size: 1.3rem;
-}
-#Register .card .data input {
-  padding: 0.3rem;
-  margin-bottom: 1rem;
-}
-#Register .card .message {
-  width: 100%;
-  background-color: rgb(245, 108, 108);
-  color: white;
-  text-align: center;
-  padding: 0.2rem 0rem;
-  border-radius: 10px;
-  margin-top: 2rem;
-}
-#Register .card .register {
-  font-size: 1.1rem;
-  font-weight: bolder;
-  padding: 0.5rem 3rem;
-  border-radius: 20px;
-  border: 0px;
-  background-color: rgb(249, 155, 181);
-  color: white;
-}
-#Register .card .login {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-size: 1.2rem;
-}
-#Register .card .login p {
-  margin-right: 1rem;
-}
-#Register .card .login button {
-  font-size: 1.2rem;
-  background-color: white;
-  border: 0px;
-  border-bottom: 1px solid rgb(255, 109, 150);
-}
-#Register .footer {
-  position: absolute;
-  bottom: 10px;
-}
-
-#ShopPage {
-  width: 100%;
+#root {
+  width: 100vw;
+  height: auto;
   min-height: 100vh;
-  height: auto;
+  background-color: #fcfcfc;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-#ShopPage .card {
-  width: 38rem;
-  height: 30rem;
-  margin-top: 4rem;
-  padding: 1rem 0rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  box-shadow: 0px 7px 10px 5px rgb(230, 225, 225);
-}
-#ShopPage .card h1 {
-  font-size: 3rem;
-}
-#ShopPage .card p {
-  font-size: 1.5rem;
-  letter-spacing: 0.3rem;
-}
-#ShopPage .card .shopdata-p {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-}
-#ShopPage .card .button {
-  margin-top: 1rem;
-}
-#ShopPage .card .button button {
-  font-size: 1.1rem;
-  font-weight: bolder;
-  padding: 0.5rem 2rem;
-  margin: 0rem 1rem;
-  border-radius: 20px;
-  border: 0px;
-  background-color: rgb(249, 155, 181);
-  color: white;
-}
-#ShopPage .reverse-title {
-  font-size: 1.5rem;
-  font-weight: bolder;
-  margin: 3rem 0 2rem 0;
-}
-#ShopPage .reverse-div {
-  width: 60rem;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0px 7px 10px 5px rgb(230, 225, 225);
-  margin-bottom: 5rem;
-}
-#ShopPage .reverse-div .reverse-card {
-  width: 90%;
-  height: auto;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-#ShopPage .reverse-div .reverse-card .display {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 0.5rem;
-  background-color: rgba(218, 66, 188, 0.719);
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 30px;
-  transition: all 2s ease-in-out;
-  cursor: pointer;
-}
-#ShopPage .reverse-div .reverse-card .display .arow {
-  position: absolute;
-  right: 3%;
-  font-size: 1.5rem;
-  font-weight: bolder;
-}
-#ShopPage .reverse-div .reverse-card .display .display-p {
-  margin: 0 2rem;
-}
-#ShopPage .reverse-div .reverse-card .display .display-p p {
-  font-size: 1.5rem;
-  font-weight: bolder;
-  letter-spacing: 0.2rem;
-}
-#ShopPage .reverse-div .reverse-card .visible {
-  width: 100%;
-}
-#ShopPage .reverse-div .reverse-card .visible .other .other-p {
-  display: flex;
-  font-size: 1.3rem;
-}
-#ShopPage .reverse-div .reverse-card .visible .other .other-p p {
-  margin: 0 1rem;
-}
-#ShopPage .reverse-div .reverse-card .hiden {
-  display: none;
-}
-#ShopPage .footer {
-  position: absolute;
-  bottom: 10px;
 }
 
-#Setting {
+#Home {
+  width: 88vw;
+  padding: 1rem;
+}
+#Home .main .header {
+  display: flex;
+  align-items: center;
+}
+#Home .main .header .title {
+  font-size: 1.5rem;
+  margin-right: 7rem;
+}
+#Home .main .header .year-month {
+  font-size: 1.5rem;
+  margin: 0rem 2rem;
+}
+#Home .main .header .week-btn {
+  width: 30px;
+  height: 30px;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+#Home .main .header .week-btn:hover {
+  background-color: rgba(204, 210, 236, 0.3960784314);
+}
+#Home .main .header .week-btn:active {
+  background-color: rgba(152, 156, 174, 0.3960784314);
+}
+#Home .main .header .week-btn svg {
+  width: 30px;
+  height: 30px;
+}
+
+#Nav {
+  width: 230px;
+  padding: 1rem;
+}
+#Nav .main {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  padding: 1rem;
+  background-color: rgba(225, 229, 248, 0.3960784314);
+  border-radius: 10px;
+}
+#Nav .main .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#Setting .card {
-  width: 35rem;
-  height: 40rem;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  box-shadow: 0px 7px 10px 5px rgb(230, 225, 225);
-}
-#Setting .card .hello {
-  font-size: 2rem;
-  margin-bottom: -1rem;
-  margin-bottom: 1rem;
-}
-#Setting .card .data {
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-}
-#Setting .card .data label {
-  font-size: 1.3rem;
-}
-#Setting .card .data input {
-  padding: 0.3rem;
-  margin-bottom: 1rem;
-  letter-spacing: 0.1rem;
-}
-#Setting .card .message {
-  width: 100%;
-  background-color: rgb(245, 108, 108);
-  color: white;
-  text-align: center;
-  padding: 0.2rem 0rem;
-  border-radius: 10px;
   margin: 1rem 0rem;
 }
-#Setting .card .button {
-  font-size: 1.1rem;
-  font-weight: bolder;
-  padding: 0.5rem 3rem;
-  border-radius: 20px;
-  border: 0px;
+#Nav .main .logo .icon {
+  width: 50px;
+  height: 50px;
+  background-image: url("../../public/logo.jpg");
+  background-size: cover;
+  border-radius: 50%;
 }
-#Setting .card .button p {
+#Nav .main .list ul li {
+  list-style-type: none;
+}
+#Nav .main .list ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.7rem 1rem;
+  margin-bottom: 0.5rem;
+  background-color: rgba(255, 255, 255, 0);
+  color: #3c3c3c;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  text-align: center;
+  letter-spacing: 10px;
+  transition: all 0.5s;
+}
+#Nav .main .list ul li a:hover {
+  background-color: rgba(204, 210, 236, 0.3960784314);
+}
+#Nav .main .list ul li a:active {
+  background-color: rgba(152, 156, 174, 0.3960784314);
+}
+#Nav .main .list ul li a svg {
   margin-right: 1rem;
-}
-#Setting .card .button button {
-  margin: 0 1rem;
-  font-size: 1.1rem;
-  font-weight: bolder;
-  padding: 0.5rem 4rem;
-  border-radius: 20px;
-  border: 0px;
-  background-color: rgb(249, 155, 181);
-  color: white;
-}
-#Setting .card .button .back {
-  padding: 0.5rem 2rem;
-}
-#Setting .footer {
-  position: absolute;
-  bottom: 10px;
-}
-
-@media screen and (max-width: 1024px) {
-  #ShopPage .reverse-div {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 768px) {
-  #Home .card {
-    width: 70%;
-  }
-  #Home .card .hello {
-    text-align: center;
-  }
-  #Register .card {
-    width: 70%;
-  }
-  #Register .card .hello {
-    text-align: center;
-  }
-  #ShopPage .card {
-    width: 80%;
-    height: 30rem;
-  }
-  #ShopPage .card h1 {
-    font-size: 2rem;
-  }
-  #ShopPage .card .shopdata-p {
-    width: 17rem;
-  }
-  #ShopPage .card .button {
-    display: flex;
-    flex-direction: column;
-  }
-  #ShopPage .card .button button {
-    margin: 0.5rem 0rem;
-  }
-  #ShopPage .reverse-div .reverse-card {
-    margin-top: 0rem;
-  }
-  #ShopPage .reverse-div .reverse-card .display {
-    flex-direction: column;
-  }
-  #ShopPage .reverse-div .reverse-card .display .display-p p {
-    font-size: 1.25rem;
-  }
-  #ShopPage .reverse-div .reverse-card .visible {
-    width: 100%;
-  }
-  #ShopPage .reverse-div .reverse-card .visible .other .other-p {
-    font-size: 1rem;
-  }
-  #ShopPage .reverse-div .reverse-card .visible .other .other-p p {
-    margin: 0rem 0rem;
-  }
-  #Setting .card {
-    width: 70%;
-    height: 45rem;
-  }
-  #Setting .card .hello {
-    font-size: 2rem;
-    margin-bottom: 0rem;
-  }
-  #Setting .card .data {
-    width: 100%;
-  }
-  #Setting .card .message {
-    margin-top: 1rem;
-  }
-  #Setting .card .button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #Setting .card .button .setting {
-    width: 12rem;
-  }
-  #Setting .card .button .back {
-    width: 80%;
-  }
-  #Setting .card .button button {
-    margin: 0.5rem 0rem;
-    padding: 0.5rem 2.9rem;
-  }
-  #Setting .card .button .back {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 425px) {
-  * input {
-    letter-spacing: 0.1rem;
-  }
-  #Home .card .hello {
-    font-size: 1rem;
-  }
-  #Home .card .login {
-    width: 100%;
-  }
-  #Home .card .login label {
-    font-size: 1rem;
-  }
-  #Home .card .login-button {
-    font-size: 1rem;
-  }
-  #Register .card .hello {
-    font-size: 1rem;
-  }
-  #Register .card .data {
-    width: 100%;
-  }
-  #Register .card .data label {
-    font-size: 1rem;
-  }
-  #Register .card .register {
-    font-size: 1rem;
-  }
-  #Register .card .login {
-    font-size: 1rem;
-  }
-  #ShopPage .card {
-    height: 25rem;
-  }
-  #ShopPage .card .shopdata-p {
-    width: 90%;
-  }
-  #ShopPage .card p {
-    letter-spacing: 0.1rem;
-    font-size: 1.1rem;
-  }
-  #ShopPage .reverse-title {
-    font-size: 1.3rem;
-  }
-  #ShopPage .reverse-div .reverse-card {
-    margin-top: 1rem;
-    padding: 0.3rem;
-  }
-  #ShopPage .reverse-div .reverse-card .display .display-p p {
-    font-size: 1rem;
-  }
-  #Setting .card {
-    width: 85%;
-  }
-  #Setting .card .hello {
-    margin-bottom: 1rem;
-  }
-  #Setting .card .data label {
-    font-size: 1rem;
-  }
-  #Setting .card .message {
-    margin-top: 0rem;
-  }
 }/*# sourceMappingURL=style.css.map */
