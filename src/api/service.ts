@@ -1,6 +1,6 @@
 import axios from "axios";
-// const API_URL = "http://127.0.0.1:8080/api/shop/";
-const API_URL = "https://sideprojectreverseweb.onrender.com/api/shop/";
+const API_URL = "http://127.0.0.1:8080/api/shop/";
+// const API_URL = "https://sideprojectreverseweb.onrender.com/api/shop/";
 
 export interface ShopType {
   shopName: string;
@@ -13,8 +13,12 @@ export interface ShopType {
 // 提供所有後端api的服務
 class ShopService {
   getReserved() {
-    return axios.get("https://sideprojectreverseweb.onrender.com/api/after");
+    return axios.get("http://127.0.0.1:8080/api/after");
   }
+
+  // getReserved() {
+  //   return axios.get("https://sideprojectreverseweb.onrender.com/api/after");
+  // }
 
   getShopData() {
     return axios.get(API_URL);
